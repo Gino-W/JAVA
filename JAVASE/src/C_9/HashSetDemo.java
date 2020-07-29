@@ -2,6 +2,7 @@ package C_9;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import org.junit.Test;
@@ -14,6 +15,27 @@ import org.junit.Test;
  * 		测试编码问题
  */
 public class HashSetDemo {
+	/*
+	 * LinkedHashSet:使用链表来维护一个集合
+	 * 	我们遍历元素的时候是按照元素的添加顺序进行的
+	 * 
+	 * LinkedHashSet插入的性能略低于HashSet，但是迭代时性能会好一点
+	 */
+	
+	@Test
+	public void testLinkedHashSet() {
+		Set set = new LinkedHashSet();
+		set.add("aa");
+		set.add("bb");
+		set.add("cc");
+		Iterator it = set.iterator();
+		while(it.hasNext()) {
+			Object obj = it.next();
+			System.out.println(obj);
+		}
+	}
+	
+	
 	/*
 	 * HashSet特点：
 	 * 		1.无序
@@ -34,6 +56,8 @@ public class HashSetDemo {
 		set.add(new Person("张三",20 ));
 		set.add(new Person("李四",22 ));
 		set.add(new Person("王五",25 ));
+		set.add(new Person("张三",20));
+		
 		System.out.println(set.size());
 		
 		Iterator iterator = set.iterator();
@@ -42,6 +66,7 @@ public class HashSetDemo {
 			Person p = (Person)obj;
 			System.out.println(p.getName());
 		}
+		
 	}
 
 }

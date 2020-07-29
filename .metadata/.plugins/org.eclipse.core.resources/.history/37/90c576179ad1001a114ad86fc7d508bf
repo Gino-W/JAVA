@@ -1,0 +1,44 @@
+package C_9;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 29 Jul 202019:11:20
+ * @File_Name: TreeSetDemo.java
+ * 
+ */
+public class TreeSetDemo {
+	/*
+	 * TreeSet:
+	 * 		1.存储的对象应该属于同一类
+	 * 		2.存储比如String，包装类，都是按照自然排序
+	 * 		3.存储的是自定义对象
+	 */
+	
+	@Test
+	public void testTreeSet() {
+		Set set = new TreeSet();
+//		set.add(78);
+//		set.add(222);
+//		set.add(90);
+//		//增强for循环
+//		for(Object obj : set) {
+//			System.out.println(obj);
+//		}
+		
+		set.add(new Person("张三",12));
+		set.add(new Person("李四",20));
+		set.add(new Person("王五",19));
+		System.out.println(set.size());
+		for(Object obj : set) {
+			Person p = (Person)obj;
+			System.out.println(p.getName());
+		}
+		
+	}
+
+}
