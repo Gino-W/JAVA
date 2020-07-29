@@ -1,0 +1,106 @@
+package C_9;
+
+/**
+ * @author: Gino
+ * @Data: 2020年7月25日上午9:19:10
+ * @File_Name: Person.java
+ * 
+ */
+public class Person {
+	private String name;
+	private int age;
+	//空参
+	public Person() {
+		super();
+	}
+	//有参
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	//对外提供一套方法
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj) {
+			return true;
+		}
+		if(obj == null) {
+			return false;
+		}
+		if(this.getClass() != obj.getClass()) {
+			return false;
+		}
+		
+		Person p = (Person)obj;
+		if(this.age == null) {
+			if(p.age != null) {
+				return false;
+			}
+		}else if(!this.age.equals(p.age)) {
+			return false;
+		}
+		return true;
+		
+		if(this.name == null) {
+			if(p.name != null) {
+				return false;
+			}
+		}else if(!this.name.equals(p.name)) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result +((name == null)?0:name.hashCode());
+		result = prime * result +((age == null)?0);
+		return result;
+	}
+	
+	
+	
+//	@Override
+//	public boolean equals(Object obj) {
+//		Person p = (Person)obj;
+//		if((this.name == p.name) && (this.age == p.age)) {
+//			return true;
+//		}else {
+//			return false;
+//		}
+//	}
+
+//	@Override
+//	public int hashCode() {
+//		return 1;
+//	}
+//
+//	@Override
+//	public boolean equals(Object obj) {
+//		Person p = (Person)obj;
+//		if(this.age != p.age) {
+//			return false;
+//		}
+//		return true;
+//	}
+	
+	
+	
+	 
+}
