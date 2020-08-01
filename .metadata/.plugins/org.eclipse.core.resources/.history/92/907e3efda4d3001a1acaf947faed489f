@@ -1,0 +1,29 @@
+package C_9;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 1 Aug 202011:06:53
+ * @File_Name: HashMapDemo.java
+ * 
+ */
+public class HashMapDemo {
+	
+	@Test
+	public void testHashMap() {
+		Map map = new HashMap();
+		map.put("1", "aa");
+		map.put("2", "bb");
+		map.put("3", "cc");
+		map.put("1", arg1);
+//		System.out.println(map.size());
+		Object obj = map.get("1");
+		System.out.println(obj);
+		map.remove("2");
+		System.out.println(map);
+	}
+}

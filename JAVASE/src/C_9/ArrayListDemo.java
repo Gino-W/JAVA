@@ -12,7 +12,7 @@ import org.junit.Test;
  * @File_Name: ListDemo.java
  * 
  */
-public class ListDemo {
+public class ArrayListDemo {
 	/*
 	 * List接口：
 	 * 		1.存储和读取的顺序一致

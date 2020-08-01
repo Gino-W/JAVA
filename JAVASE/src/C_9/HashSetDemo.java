@@ -51,7 +51,7 @@ public class HashSetDemo {
 	 * 
 	 */
 	@Test
-	public void test() {
+	public void testHashSet() {
 		Set set = new HashSet();
 		set.add(new Person("张三",20 ));
 		set.add(new Person("李四",22 ));

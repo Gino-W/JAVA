@@ -16,13 +16,14 @@ public class TreeSetDemo {
 	/*
 	 * TreeSet:
 	 * 		1.存储的对象应该属于同一类
-	 * 		2.存储比如String，包装类，都是按照自然排序
+	 * 		2.存储比如String，包装类，都是按照自然排序,自己定义的类会异常
 	 * 		3.存储的是自定义对象
 	 * 			1).让对象自身具有可比性，对象所在类需要实现Comparable接口
 	 * 				如果不实现，会出现类转换异常
 	 * 			2).容器本身制定比较规则   Comparator
 	 */
 	
+	//出现异常
 	@Test
 	public void testTreeSet1() {
 		Set set = new TreeSet();
@@ -45,6 +46,7 @@ public class TreeSetDemo {
 	public void testTreeSet2() {
 		//构建一个比较器
 //		MyComparator mc = new MyComparator();
+//		Set set = new TreeSet(mc);
 		//使用匿名内部类自定义比较器
 		Set set = new TreeSet(new Comparator() {
 			@Override
