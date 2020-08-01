@@ -1,0 +1,39 @@
+package C_9;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 1 Aug 202012:37:15
+ * @File_Name: TreeMapDemo.java
+ * 
+ * 		TreeMap按照key排序
+ * 
+ */
+public class TreeMapDemo {
+	
+	@Test
+	public void testTreeMap() {
+		Map map = new TreeMap();
+		map.put("a1", "aa");
+		map.put("e1", "bb");
+		map.put("c1", "cc");
+		
+		Set keySet = map.keySet();
+		Iterator it = keySet.iterator();
+		while(it.hasNext()) {
+			Object next = it.next();
+			String key = (String)next;
+			System.out.print(key + "----");
+			Object value = map.get(key);
+			System.out.println(value);
+		}
+		
+	}
+
+}

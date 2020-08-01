@@ -79,18 +79,18 @@ public class Person /*implements Comparable*/{
 	@Override
 	public int compareTo(Object o) {
 		Person p = (Person)o;
-//		int i = this.age.compareTo(p.age);
-//		//如果年龄相等则按照姓名排列
-//		if(i == 0) {
-//			return this.name.compareTo(p.name);
-//		}
-//		return i;
+		int i = this.age.compareTo(p.age);
+		//如果年龄相等则按照姓名排列
+		if(i == 0) {
+			return this.name.compareTo(p.name);
+		}
+		return i;
 		//按年龄排序，此对象比上一个对象年龄大，正序取，否则逆序取
-//		if(this.age > p.age) {
-//			return 1;
-//		}
-//		return i;//0代表元素都一样，正整数元素怎么存就怎么取，负整数元素怎么存就逆序取
-//		return this.age.compareTo(p.age);
+		if(this.age > p.age) {
+			return 1;
+		}
+		return i;//0代表元素都一样，正整数元素怎么存就怎么取，负整数元素怎么存就逆序取
+		return this.age.compareTo(p.age);
 		
 		if(this.age.compareTo(p.age) == 0) {
 			return this.name.compareTo(p.name);

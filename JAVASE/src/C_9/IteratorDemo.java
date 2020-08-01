@@ -21,7 +21,7 @@ public class IteratorDemo {
 		list.add("bb");
 		list.add("cc");
 		
-		//方式一
+		//方式一  for循环
 		System.out.println("----方式一----");
 		for(int i=0; i<list.size(); i++) {
 			Object object = list.get(i);
