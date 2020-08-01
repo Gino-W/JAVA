@@ -11,11 +11,8 @@ Collection: add(Object obj) addAll(Collection c) size() clear() isEmpty()
 		-->ArrayList：内部是一个数组结构，不同步，代替了vector，查询快
 		-->LinkedList：内部数据结构是一个链表，不同步，增删快
 		-->Vector：内部数据结构也是数组，同步的，增删查都慢
-	
-	
 	-->Set：无序，元素唯一
 		Set接口与Collection接口中的方法一致
-		
 		-->HashSet：内部数据结构hashCode是哈希表，不同步
 				怎么保证存储的元素是唯一的？
 					通过对象的hashCode和equals方法来确定
@@ -25,21 +22,17 @@ Collection: add(Object obj) addAll(Collection c) size() clear() isEmpty()
 							如果结果为false，视为不同，就进行存储
 				注意：如果元素存储到hashSet中，必须要覆盖hashCode和equals方法
 					尽量这两个方法保持一致
-				
 			-->LinkedHashSet：是其子类，当我们遍历集合时，是按照我们添加的顺序进行的
-					频繁的遍历，但是增删比较少，可以选择使用这种
-					
+					频繁的遍历，但是增删比较少，可以选择使用这种		
 		-->TreeSet：可以对元素进行排序，也是不同步的
 				判断元素唯一性的方式：就是根据比较方法反悔的结构；0（相同）时不再存储
 				排序方式：
 					1.元素自身具有比较的功能，实现Comparable接口，重写CompareTo方法
 					2.元素自身不具有比较功能，没有实现Comparable接口，这时定义一个类，实现Comparator接口，重写Compare方法
 					      然后把这个类创建的对象作为参数，通过构造函数传递给TreeSet集合
-	
 Map:一次添加一对元素         Collection一次添加一个元素
 	Map也称为双列集合   Collection也称为单列集合
 	Map中key必须唯一
-	
 	put(Object key, Object value)
 	remove(Object obj)
 	clear()   size()
@@ -47,15 +40,13 @@ Map:一次添加一对元素         Collection一次添加一个元素
 	boolean containsKey(Object key)
 	boolean containsValue(Object value)
 	
-	循环方式
+	循环方式：
 		1.keySet --> 得到key的集合，循环得到每一个key，通过get(key)，获取value
 		2.entry  --> 得到key和value整体的Map.Entry集合，循环得到每一个Map.Entry
 					 再通过调用getKey()和getValue。获取key和value
 	
 	-->HashMap：内部数据结构是哈希表，不同步，允许null作为key或者value
-			-->LinkedHashMap：是其子类，可以按照添加进map的顺序进行遍历
-	
+		-->LinkedHashMap：是其子类，可以按照添加进map的顺序进行遍历
 	-->TreeMap：内部数据结构是二叉树，不同步。可以对key进行排序
-	
 	-->HashTable：很少用
 		-->Properties:根据IO使用
