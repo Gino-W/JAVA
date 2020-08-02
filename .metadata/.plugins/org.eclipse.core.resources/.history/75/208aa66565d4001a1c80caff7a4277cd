@@ -1,0 +1,22 @@
+package C_10;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 2 Aug 202010:07:25
+ * @File_Name: GenericExample.java
+ * 
+ */
+public class GenericExample {
+	@Test
+	public void testLinkedList() {
+		List<Person> list = new LinkedList<Person>();
+		list.add(new Person("张三",20));
+		list.add(new Person("李四",30));
+		list.add(new Person("王五",45));
+	}
+}

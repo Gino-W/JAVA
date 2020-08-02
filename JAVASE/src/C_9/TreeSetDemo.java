@@ -57,7 +57,7 @@ public class TreeSetDemo {
 				if(i == 0) {
 					return p1.getName().compareTo(p2.getName());
 				}
-				return 0;
+				return i;
 			}
 		});
 		set.add(new Person("张三",20));

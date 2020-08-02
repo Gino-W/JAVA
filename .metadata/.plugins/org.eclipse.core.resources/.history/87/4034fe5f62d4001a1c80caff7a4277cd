@@ -1,0 +1,22 @@
+package C_10;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author: Gino
+ * @Data: 2 Aug 202009:41:24
+ * @File_Name: GenericDemo1.java
+ * 
+ */
+public class GenericDemo1 {
+	public static void main(String[] args) {
+		//泛型
+		List list = new ArrayList();
+		list.add("aa");
+		list.add("bb");
+		list.add("cc");
+		
+	}
+
+}
