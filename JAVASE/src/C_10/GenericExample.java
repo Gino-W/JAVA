@@ -19,6 +19,7 @@ import org.junit.Test;
  * 
  */
 public class GenericExample {
+	
 	@Test
 	public void testLinkedList() {
 		List<Person> list = new LinkedList<Person>();
@@ -32,6 +33,7 @@ public class GenericExample {
 		}
 	}
 	
+	//TreeSet3 类型转换异常   需要制定比较规则
 	@Test
 	public void testTreeSet() {
 		TreeSet<Person> ts = new TreeSet<Person>();
@@ -44,10 +46,9 @@ public class GenericExample {
 			System.out.println(p.getName());
 		}
 	}
-	
+	//集合定义比较器优先级高
 	@Test
 	public void testTreeSet2() {
-		//集合定义比较器优先级高
 		TreeSet<Person> ts = new TreeSet<Person>(new Comparator<Person>() {
 
 			@Override
