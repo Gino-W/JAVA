@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;obj2&apos; from expression &apos;mt.getObj()&apos;&#x0D;&#x0A;- Original project: &apos;JAVASE&apos;&#x0D;&#x0A;- Variable name: &apos;obj2&apos;&#x0D;&#x0A;- Destination method: &apos;C_10.MyTools.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;mt.getObj()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;obj2&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;C_10{MyTools.java" name="obj2" replace="true" selection="544 0" stamp="1596426702710" version="1.0"/>
+</session>
