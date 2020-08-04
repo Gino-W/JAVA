@@ -1,0 +1,5 @@
+枚举类通过关键字enum来定义
+jdk1.5版本之后出来的新特性
+
+枚举类对象的属性被private final所修饰
+构造函数默认被private final所修饰

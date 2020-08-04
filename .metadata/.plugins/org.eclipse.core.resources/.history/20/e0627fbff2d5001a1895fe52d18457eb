@@ -1,0 +1,22 @@
+枚举类通过关键字enum来定义
+jdk1.5版本之后出来的新特性
+
+枚举类对象的属性被private final所修饰
+构造函数默认被private所修饰
+
+枚举类对象的创建必须放在第一行进行声明
+每一个对象用逗号隔开，最后一个用分号结尾
+
+枚举类可以实现接口，但不能继承其他类，因为默认继承的是java.lang.Enum
+
+switch(value){
+	case :
+			break;
+	....
+	default:
+		break;
+}
+
+枚举类常用方法：
+	values():返回的是枚举类型的数组对象
+	valueOf(String str):返回的是一个枚举对象
