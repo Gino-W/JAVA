@@ -1,0 +1,11 @@
+package C_11;
+
+/**
+ * @author: Gino
+ * @Data: 4 Aug 202010:18:58
+ * @File_Name: MyAnnotation.java
+ * 
+ */
+public @interface MyAnnotation {
+	
+}

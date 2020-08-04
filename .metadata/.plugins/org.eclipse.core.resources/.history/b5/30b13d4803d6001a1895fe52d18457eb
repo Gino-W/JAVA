@@ -1,0 +1,27 @@
+package C_11;
+
+/**
+ * @author: Gino
+ * @Data: 4 Aug 202010:18:58
+ * @File_Name: MyAnnotation.java
+ * 
+ * 	注解作用目标：
+ * 			类上
+ * 			方法上
+ * 			形参上
+ * 			成员变量上
+ * 			构造函数上
+ * 			包上(需要进行特殊处理)
+ * 			局部变量上
+ */
+public @interface MyAnnotation {
+	/*
+	 * 注解的属性
+	 * 格式：	类型   属性值名();
+	 * String ,基本数据类型(byte short int long float double char), Class, enum, 
+	 * 注解类型, 以上这些一维数组类型
+	 */
+	
+	String value();
+	
+}
