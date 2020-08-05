@@ -1,0 +1,32 @@
+package C_12;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+/**
+ * @author: Gino
+ * @Data: 5 Aug 202016:19:52
+ * @File_Name: IO_WriterDemo2.java
+ * 
+ */
+public class IO_WriterDemo2 {
+	public static void main(String[] args){
+		FileWriter fileWriter = null;
+		try {
+			fileWriter = new FileWriter(new File("..\\a\\b.txt"),true);
+			fileWriter.write(97);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				fileWriter.close();
+			} catch (IOException e) {
+//				e.printStackTrace();
+				//保存到日志
+				throw new RuntimeException("流关闭了！赶紧来处理");
+			}
+		}
+	}
+
+}
