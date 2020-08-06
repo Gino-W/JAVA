@@ -1,0 +1,34 @@
+package C_12_1;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ * @author: Gino
+ * @Data: 5 Aug 202017:16:06
+ * @File_Name: IO_FileReader_MyBufferZone_Demo.java
+ * 
+ */
+public class IO_FileReader_MyBufferZone_Demo {
+	public static void main(String[] args) throws IOException {
+		FileReader fileReader = new FileReader("..\\Practice\\b.txt");
+		
+		//临时缓冲区
+		char[] c = new char[10];
+		
+//		int len1 = fileReader.read(c);		//将数据读取到一个字符数组中
+//		System.out.println("长度：" + len1 + "---读取的内容是" + new String(c));
+//		int len2 = fileReader.read(c);
+//		System.out.println("长度：" + len2 + "---读取的内容是" + new String(c));
+//		int len3 = fileReader.read(c);
+//		System.out.println("长度：" + len3 + "---读取的内容是" + new String(c));
+		
+		int len = 0;
+		while((len = fileReader.read(c)) != -1) {
+			System.out.println(new String(c, 0, len));
+			System.out.println(new String(c));
+		}
+	}
+
+}

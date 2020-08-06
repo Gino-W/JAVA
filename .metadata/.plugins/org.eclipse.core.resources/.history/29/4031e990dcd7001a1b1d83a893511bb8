@@ -1,0 +1,60 @@
+package C_12_3;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+
+/**
+ * @author: Gino
+ * @Data: 6 Aug 202019:03:12
+ * @File_Name: TransDemo.java
+ * 
+ */
+public class TransDemo {
+	public static void main(String[] args) {
+		 FileInputStream fis;
+		//需要转换吗？
+		InputStreamReader isr;
+		//需要提高效率吗？
+		BufferedReader br;
+		
+		FileOutputStream fos;
+		OutputStreamWriter osw;
+		BufferedWriter bw;
+		try {
+			fis = new FileInputStream("..\\Practice\\xx.txt");
+			 isr = new InputStreamReader(fis);
+			 br = new BufferedReader(isr);
+			 
+			 fos = new FileOutputStream("..\\Practice\\xx\\xx_copy.txt");
+			 osw = new OutputStreamWriter(fos);
+			 bw = new BufferedWriter(osw);
+			 
+			 String line = null;
+			 while((line = br.readLine()) != null) {
+				 bw.write(line);
+				 bw.flush();
+			 }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+		 fis.close();
+		 isr.close();
+		 br.close();
+		 fos.close();
+		 osw.close();
+		 bw.close();
+		}
+	}
+
+}
