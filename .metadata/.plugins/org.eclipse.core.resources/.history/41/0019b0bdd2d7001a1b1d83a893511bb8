@@ -1,0 +1,74 @@
+package C_12_2;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/**
+ * @author: Gino
+ * @Data: 6 Aug 202018:36:55
+ * @File_Name: Buffer_InputAndOutput.java
+ * 
+ */
+public class Buffer_InputAndOutput {
+	public static void main(String[] args){
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		BufferedInputStream bis = null;
+		BufferedOutputStream bos = null;
+		
+		try {
+			fis = new FileInputStream("..\\Practice\\stand.png");
+			fos = new FileOutputStream("..\\Practice\\xx\\stand.png_copy2");
+			bis = new BufferedInputStream(fis);
+			bos = new BufferedOutputStream(fos);
+			
+			byte[] b = new byte[1024];
+			
+			int len = 0;
+			int read = bis.read(b);
+			while((len = bis.read()) != -1) {
+				bos.write(b);
+				bos.flush();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			if(fis != null) {
+				try {
+					fis.close();
+				} catch (IOException e) {
+					throw new RuntimeException("关闭读取流出问题了");
+				}
+			}
+			if(fos != null) {
+				try {
+					fos.close();
+				} catch (IOException e) {
+					throw new RuntimeException("关闭输出流出问题了");
+				}
+			}
+			if(bis != null) {
+				try {
+					bis.close();
+				} catch (IOException e) {
+					throw new RuntimeException("出问题了");
+				}
+			}
+			if(bos != null) {
+				try {
+					bos.close();
+				} catch (IOException e) {
+					throw new RuntimeException("出问题了");
+				}
+			}
+		}
+		
+	}
+
+}
