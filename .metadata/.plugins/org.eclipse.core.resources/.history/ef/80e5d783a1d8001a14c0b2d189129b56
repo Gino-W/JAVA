@@ -1,0 +1,19 @@
+package Encode;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202019:27:49
+ * @File_Name: EncodeDemo.java
+ * 
+ */
+public class EncodeDemo {
+	public static void main(String[] args) {
+		String str = "中国";
+		//编码
+		byte[] b = str.getBytes();
+		//解码
+		String newString = new String(b);
+		System.out.println(newString);
+	}
+
+}

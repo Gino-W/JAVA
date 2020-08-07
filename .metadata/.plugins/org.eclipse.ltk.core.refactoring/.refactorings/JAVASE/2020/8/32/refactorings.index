@@ -48,3 +48,4 @@
 1596765737931	Rename type 'SystemDemo'
 1596765902276	Rename type 'PrintStream_Demo'
 1596769861636	Extract local variable 'readObject'
+1596799766126	Extract local variable 'b'
