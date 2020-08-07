@@ -1,0 +1,35 @@
+package C_12_3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202009:09:15
+ * @File_Name: SystemDemo.java
+ * 
+ */
+public class SystemDemo {
+	public static void main(String[] args) throws IOException {
+		InputStream in = System.in;
+
+//		int read = in.read();
+//		System.out.println(read);
+		
+//		int len = 0;
+//		while((len = in.read()) != -1) {
+//			System.out.println(len);
+//			System.out.println((char)len);
+//		}
+		
+		InputStreamReader isr = new InputStreamReader(in);
+		BufferedReader br = new BufferedReader(isr);
+		String line = null;
+		while((line = br.readLine()) != null) {
+			System.out.println(line);
+		}
+	}
+
+}

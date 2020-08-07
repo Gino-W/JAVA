@@ -43,3 +43,8 @@
 1596708731414	Extract local variable 'sourceFile'
 1596710409289	Extract local variable 'bis'
 1596710531972	Extract local variable 'read'
+1596762583529	Extract local variable 'in'
+1596763485283	Extract local variable 'out'
+1596765737931	Rename type 'SystemDemo'
+1596765902276	Rename type 'PrintStream_Demo'
+1596769861636	Extract local variable 'readObject'
