@@ -1,0 +1,54 @@
+package C_13_String;
+
+/**
+ * @author: Gino
+ * @Data: 8 Aug 202010:36:17
+ * @File_Name: String_Example_1.java
+ * 
+ * 				comparaTo方法
+ * 
+ */
+public class String_Example_1 {
+	public static void main(String[] args) {
+//			String str1 = "a";
+//			String str2 = "b";
+//			System.out.println(str1.compareTo(str2));
+		
+		String[] str = {"abc","def","opq","jkl"};
+		printArr(str);
+		sort(str);
+		printArr(str);
+	}
+	
+	//按照字典顺序从小到大排序
+	private static void sort(String[] s) {
+		for(int i=0; i<s.length-1; i++) {
+			for(int j=i+1; j<s.length; j++) {
+				if(s[i].compareTo(s[j]) > 0) {
+					//换位置
+					swap(s, i, j);
+				}
+			}
+		}
+	}
+
+	//换位置
+	private static void swap(String[] s, int i, int j) {
+		String temp;
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
+	}
+
+	//打印数组
+	public static void printArr(String[] s) {
+		System.out.print("[");
+		for(int i=0; i<s.length; i++) {
+			if(i != s.length-1) {
+				System.out.print(s[i] + ",");
+			}else {
+				System.out.println(s[i] + "]");
+			}
+		}
+	} 
+}

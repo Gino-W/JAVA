@@ -1,0 +1,27 @@
+package C_13_String;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202021:50:47
+ * @File_Name: StringDemo.java
+ * 
+ */
+public class StringDemo {
+	
+	/*
+	 * 1.判断功能
+	 * 		equals(Object o)		比较字符串的内容是否相同
+	 * 		equalsIgnoreCase(String another)  比较字符串的内容是否相同,忽略大小写
+	 */
+	@Test
+	public void test1() {
+		String str1 = "abc";
+		String str2 = "abc";
+		System.out.println(str1 == str2);
+		System.out.println(str1.equals(str2));
+		System.out.println(str1.equalsIgnoreCase(str2));
+	}
+
+}

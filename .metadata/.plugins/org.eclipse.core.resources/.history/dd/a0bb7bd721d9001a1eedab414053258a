@@ -1,0 +1,25 @@
+package C_13_String;
+
+/**
+ * @author: Gino
+ * @Data: 8 Aug 202010:36:17
+ * @File_Name: String_Example_1.java
+ * 
+ */
+public class String_Example_1 {
+	public static void main(String[] args) {
+//			String str1 = "a";
+//			String str2 = "b";
+//			System.out.println(str1.compareTo(str2));
+		
+		String[] str = {"abc","def","opq","jkl"};
+		str.p
+	}
+	
+	public void printArr(String[] s) {
+		for(String st : s) {
+			System.out.println(st);
+		}
+	} 
+
+}

@@ -1,0 +1,17 @@
+String：字符串常量
+	对象已创建不可修改
+	速度慢
+		
+StringBuffer：字符串变量
+	对象创建完后，可以更改
+	速度快
+	多线程
+
+StringBuilder：字符串变量
+	对象创建完后，可以更改
+	速度快
+	单线程
+	
+少量的字符串操作-----String
+多线程大量的字符串进行操作-----StringBuffer
+单线程大量的字符串进行操作-----StringBuilder

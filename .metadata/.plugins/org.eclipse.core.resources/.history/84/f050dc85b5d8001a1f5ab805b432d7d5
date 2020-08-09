@@ -1,0 +1,25 @@
+package C_13_String;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202021:50:47
+ * @File_Name: StringDemo.java
+ * 
+ */
+public class StringDemo {
+	
+	/*
+	 * 1.判断功能
+	 * 
+	 */
+	@Test
+	public void test1() {
+		String str1 = "abc";
+		String str2 = "abc";
+		System.out.println(str1 == str2);
+		System.out.println(str1.equals(str2));
+	}
+
+}
