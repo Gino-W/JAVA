@@ -1,0 +1,19 @@
+package C_13_String;
+
+/**
+ * @author: Gino
+ * @Data: 8 Aug 202010:36:17
+ * @File_Name: String_Example_1.java
+ * 
+ */
+public class String_Example_1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

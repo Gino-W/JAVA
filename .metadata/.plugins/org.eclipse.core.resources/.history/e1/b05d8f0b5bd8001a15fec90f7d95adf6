@@ -1,0 +1,36 @@
+package C_12_3;
+
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202010:47:04
+ * @File_Name: ObjStreamDemo.java
+ * 
+ */
+public class ObjStreamDemo {
+	
+	@Test
+	public void testObjectInputStream() {
+		
+	}
+	
+	
+	@Test
+	public void testObjectOutputStream() throws IOException {
+		//对象的写出流，写到磁盘上
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("..\\Practice\\ObjectOutputStream.txt"));
+		out.writeObject(new Person("zs",20));
+		out.flush();
+		out.close();
+	}
+
+}

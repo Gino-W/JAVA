@@ -1,0 +1,14 @@
+package C_12_3;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202010:56:18
+ * @File_Name: Person.java
+ * 
+ */
+public class Person {
+	private String name;
+	private int age;
+	
+
+}

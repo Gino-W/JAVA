@@ -1,0 +1,28 @@
+package C_13_Date;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 9 Aug 202015:51:09
+ * @File_Name: DateDemo.java
+ * 
+ */
+
+
+/*
+ * 与时间相关的类
+ * 		1.System
+ * 		2.Date
+ * 		3.SimpleDateFormat
+ * 		4.Calendar
+ */
+public class DateDemo {
+
+	@Test
+	public void testSystem() {
+		long currentTime = System.currentTimeMillis();
+		System.out.println(currentTime);
+		
+	}
+}

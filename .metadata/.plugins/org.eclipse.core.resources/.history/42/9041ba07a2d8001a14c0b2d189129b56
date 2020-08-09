@@ -1,0 +1,26 @@
+package Encode;
+
+import java.io.UnsupportedEncodingException;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202019:27:49
+ * @File_Name: EncodeDemo.java
+ * 
+ * 
+ * 编码：字符串-->字节数组   
+ * 
+ * 解码：字节数组-->字符串
+ * 
+ */
+public class EncodeDemo {
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		String str = "中国";
+		//编码
+		byte[] b = str.getBytes("utf-8");
+		//解码
+		String newString = new String(b);
+		System.out.println(newString);
+	}
+
+}

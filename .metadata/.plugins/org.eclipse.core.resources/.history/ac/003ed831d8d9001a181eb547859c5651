@@ -1,0 +1,32 @@
+package C_13_StringBuffer;
+
+/**
+ * @author: Gino
+ * @Data: 9 Aug 202008:15:27
+ * @File_Name: StringBuffer.java
+ * 
+ */
+public class StringBufferDemo {
+	public static void main(String[] args) {
+		/*
+		 * StringBuffer：字符串缓冲区
+		 * 		用于存储数据的容器
+		 * 
+		 * 功能：
+		 * 		1.添加
+		 * 
+		 */
+		StringBuffer sb = new StringBuffer();
+		StringBuffer append = sb.append("a");
+		StringBuffer append2 = sb.append("xx");
+		
+		StringBuffer append3 = sb.append("aa").append("bb").append("cc").append("dd");
+		sb.insert(0, "llllllllll");
+		System.out.println(sb);
+		
+//		System.out.println(append == append2);
+		System.out.println(append2);
+		
+	}
+
+}

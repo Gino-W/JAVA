@@ -1,0 +1,38 @@
+package C_13_String;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 7 Aug 202021:50:47
+ * @File_Name: StringDemo.java
+ * 
+ */
+public class StringDemo {
+	
+	/*
+	 * 1.判断功能
+	 * 		equals(Object o)		比较字符串的内容是否相同
+	 * 		equalsIgnoreCase(String another)  比较字符串的内容是否相同,忽略大小写
+	 * 		startsWith(String str)		是否以指定字符串开头
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	@Test
+	public void test1() {
+		String str1 = "abc";
+		String str2 = "ABC";
+		System.out.println(str1 == str2);
+		System.out.println(str1.equals(str2));
+		System.out.println(str1.equalsIgnoreCase(str2));
+		
+		System.out.println(str1.startsWith("a"));
+		System.out.println(str1.endsWith("c"));
+	
+	
+	
+	}
+
+}
