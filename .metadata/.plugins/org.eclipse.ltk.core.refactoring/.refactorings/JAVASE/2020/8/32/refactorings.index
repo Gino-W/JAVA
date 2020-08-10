@@ -92,3 +92,6 @@
 1596963196253	Extract local variable 'round'
 1596963249134	Extract local variable 'random'
 1596964342965	Move compilation unit
+1596981998641	Extract local variable 'localHost'
+1596982184745	Extract local variable 'byName'
+1596982529243	Extract local variable 'allByName'
