@@ -1,0 +1,21 @@
+package C_14_TCP;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * @author: Gino
+ * @Data: 10 Aug 202008:40:40
+ * @File_Name: Server.java
+ * 
+ * 		服务器端
+ */
+public class Server {
+	public static void main(String[] args) throws IOException {
+		//创建服务端(socket)
+		ServerSocket serversocket = new ServerSocket(2222);
+		
+	}
+
+}

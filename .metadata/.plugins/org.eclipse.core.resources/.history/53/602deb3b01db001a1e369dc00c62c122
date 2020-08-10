@@ -1,0 +1,31 @@
+package C_14_UDP;
+
+import java.io.*;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+/**
+ * @author: Gino
+ * @Data: 10 Aug 202019:42:52
+ * @File_Name: RicieveDemo.java
+ * 
+ */
+public class ReceiveDemo {
+	public static void main(String[] args) throws IOException {
+		//创建接收端Socket对象
+		DatagramSocket ds = new DatagramSocket();
+		byte[] buf = new byte[100];
+		int length = buf.length;
+		
+		//数据包
+		DatagramPacket p = new DatagramPacket(buf, length);
+		//接收数据
+		ds.receive(p);
+		
+		byte[] data = p.getData();
+		System.out.println(new String(data));
+		
+		ds.close();
+	}
+
+}

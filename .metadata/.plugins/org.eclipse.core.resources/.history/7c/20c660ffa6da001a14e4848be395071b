@@ -1,0 +1,27 @@
+package C_14_TCP;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+/**
+ * @author: Gino
+ * @Data: 10 Aug 202008:41:08
+ * @File_Name: Client.java
+ * 
+ * 		客户端
+ */
+public class Client {
+	public static void main(String[] args) throws UnknownHostException, IOException {
+		//创建客户端(Socket),连接指定的IP + 端口号
+		Socket socket = new Socket("192.168.1.1", 2222);
+		
+		OutputStream outputStream = socket.getOutputStream();
+		String data = "你好";
+		outputStream.write(data.getBytes());
+		outputStream.close();
+		
+	}
+
+}
