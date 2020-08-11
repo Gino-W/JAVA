@@ -1,0 +1,29 @@
+package C_15_Method;
+
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202010:01:37
+ * @File_Name: MethodDemo.java
+ * 
+ */
+public class MethodDemo {
+	
+	@Test
+	public void testMethod() throws ClassNotFoundException {
+//		Person p = new Person();
+//		p.playBasketball();
+		
+		//1.获取字节码文件对象
+		Class<?> clazz = Class.forName("C_15_Method.Person");
+		//2.
+		Method[] methods = clazz.getMethods();
+		for(Method m : methods) {
+			System.out.println(m.getName());
+		}
+	}
+
+}

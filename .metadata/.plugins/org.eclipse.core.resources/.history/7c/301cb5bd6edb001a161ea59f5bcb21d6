@@ -1,0 +1,22 @@
+package C_15_Constructor;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202008:57:52
+ * @File_Name: ConstructorDemo.java
+ * 
+ */
+public class ConstructorDemo {
+	
+	@Test
+	public void testConstructor() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		//1.获取字节码文件(Person.class)
+		Class<Person> clazz = (Class<Person>) Class.forName("C_15_Constructor.Person");
+		//2.如何创建一个对象
+		Object newInstance = clazz.newInstance();//调用空参构造函数
+		Person newInstance2 = clazz.newInstance();
+	}
+
+}

@@ -1,0 +1,18 @@
+package C_15_Constructor;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202008:57:52
+ * @File_Name: ConstructorDemo.java
+ * 
+ */
+public class ConstructorDemo {
+	
+	@Test
+	public void testConstructor() throws ClassNotFoundException {
+		Class clazz1 = Class.forName("C_15_Class.Person");
+	}
+
+}

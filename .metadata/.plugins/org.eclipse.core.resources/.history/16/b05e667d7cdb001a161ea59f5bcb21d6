@@ -1,0 +1,21 @@
+package C_15_Example;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202010:32:29
+ * @File_Name: ReflectDemo.java
+ * 
+ */
+public class ReflectDemo {
+	
+	@Test
+	public void testReflect() {
+		Person p = new Person();
+		p.setName("张三");
+		p.setAge(18);
+		p.playBasketball();
+	}
+
+}

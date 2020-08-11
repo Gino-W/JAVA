@@ -1,0 +1,26 @@
+package C_15_Field;
+
+import java.lang.reflect.Field;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202009:34:30
+ * @File_Name: FieldDemo.java
+ * 
+ */
+public class FieldDemo {
+	
+	@Test
+	public void testField() throws ClassNotFoundException {
+		
+		//1.获得字节码文件
+		Class clazz = Class.forName("C_15_Field.Person");
+		Field[] fields = clazz.getFields();
+		for(Field f : fields) {
+			System.out.println(f.getName());
+		}
+	}
+
+}
