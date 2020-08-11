@@ -1,0 +1,18 @@
+package C_15_Method;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202010:01:37
+ * @File_Name: MethodDemo.java
+ * 
+ */
+public class MethodDemo {
+	
+	@Test
+	public void testMethod() {
+		Person p = new Person();
+	}
+
+}

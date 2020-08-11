@@ -1,0 +1,18 @@
+package C_15_Field;
+
+import org.junit.Test;
+
+/**
+ * @author: Gino
+ * @Data: 11 Aug 202009:34:30
+ * @File_Name: FieldDemo.java
+ * 
+ */
+public class FieldDemo {
+	
+	@Test
+	public void testField() {
+		
+	}
+
+}
